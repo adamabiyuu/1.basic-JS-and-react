@@ -86,6 +86,6 @@ body {
   flex:1;
 }
 
-.task-list-item.checked {
+.tasks-list-item.checked {
   background-color: #d4edda;
 }
