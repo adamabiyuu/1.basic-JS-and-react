@@ -1,3 +1,16 @@
-h1 {
-    color: blue
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 20px;
 }

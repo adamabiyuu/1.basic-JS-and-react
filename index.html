@@ -10,10 +10,19 @@
     <div class="container">
       <form class="form" id="taskForm">
         <div class="form-group">
-          <label for="taskTitle" class="form-label"> Mau ngapain hari ini? </label>
+          <label for="taskTitle" class="form-label"> 
+            Mau ngapain hari ini? 
+          </label>
           <input class="form-input form-input--full" type="text" id="taskTitle" name="taskTitle" placeholder="Masukkan kegiatan" />
         </div>
+        <div class="form-group form-group--button-right">
+          <button class="button" type="submit">Simpan</button>
+        </div>
       </form>
+      <div class="tasks">
+        <h2 class="tasks-title">Agendaku</h2>
+        <ul class="tasks-list" id="tasksList"></ul>
+      </div>
     </div>
 
     <script type="text/javascript" src="app.js"></script>
