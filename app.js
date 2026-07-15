@@ -9,6 +9,27 @@ taskForm.addEventListener("submit", function(event) {
     addTask();
 })
 
+function checkTask(index) {
+    const taskElement = document.getElementById(`task${index}`);
+    const checkboxElement = document.getElementById(`checkTask${index}`);
+    
+    if(checkboxElement.checked){
+        taskElement.classList.add("checked");
+        tasks[index].checked = true;
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+    } else {
+        taskElement.classList.remove("checked");
+        tasks[index].checked = false;
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+    }
+}
+
+function deleteTask(index) {
+    tasks.splice(index, 1);
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+    renderTask();
+}
+
 function addTask() {
     const taskTitleValue = document.getElementById("taskTitle").value;
 
