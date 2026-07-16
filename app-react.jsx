@@ -37,7 +37,7 @@ const MyTasksList = (props) => {
               </li>
             ))
           ) : (
-            <div class="tasks">
+            <div className="tasks">
               <div className="task-title">Tidak ada kegiatan</div>
             </div>
           )}
